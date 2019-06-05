@@ -18,11 +18,12 @@
     <meta name="theme-color" content="#ffffff">
     <script type="text/javascript">
       $(function(){
-        $("#nav-01").load("post-nav.html");
-      })
-      $(function(){
+        $("#nav-01").load("https://dev.m86.work/nav/navigation.html");
         $("#footer-01").load("https://dev.m86.work/footer/copyright.html");
-      })
+      });
+      $(window).on('load',function(){
+        $('#info').addClass('active');
+      });
     </script>
     <!-- HTML Meta Tags -->
     <title>マイクラサーバーがDoS攻撃に遭いました。 - StarLight</title>
