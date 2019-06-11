@@ -14,6 +14,13 @@
       $(function(){
         $("#nav-01").load("https://dev.m86.work/nav/navigation.html");
         $("#footer-01").load("https://dev.m86.work/footer/copyright.html");
+        $('.kiji:not(.kiji:first-of-type)').css('display','none');//一番上の要素以外を非表示
+        $('.more').nextAll('.more').css('display','none');//ボタンを非表示
+        $('.more').on('click', function() {
+          $(this).css('display','none');//押したボタンを非表示
+          $(this).next('.kiji').slideDown('fast');
+          $(this).nextAll('.more:first').css('display','block'); //次のボタンを表示
+        });
       });
       $(window).on('load',function(){
         $('#info').addClass('active');
@@ -57,15 +64,120 @@
     </div>
     <div class="card m-3">
       <div class="card-header">
-        変更
+      変更
       </div>
       <div class="card-body">
-        <h5 class="card-title">WARBotの更新ログの変更について</h5>
-        <p><span class="badge badge-secondary">投稿 2019/05/14</span><span class="badge badge-secondary">更新 2019/06/05</span>
-        <p class="card-text">WARBotの更新ログを、以下のページに統一します。</p>
-        <a href="https://gist.github.com/Chipsnet/e86583934ca7ef74b2134dfc4b0db14b" class="btn btn-primary">更新ログ</a>
+      <h5 class="card-title">WARBotの更新ログの変更について</h5>
+      <p><span class="badge badge-secondary">投稿 2019/05/14</span><span class="badge badge-secondary">更新 2019/06/05</span>
+      <p class="card-text">WARBotの更新ログを、以下のページに統一します。</p>
+      <a href="https://gist.github.com/Chipsnet/e86583934ca7ef74b2134dfc4b0db14b" class="btn btn-primary">更新ログ</a>
       </div>
     </div>
+    <div class="card m-3">
+      <div class="card-header">
+      バグ情報
+      </div>
+      <div class="card-body">
+      <h5 class="card-title">WARBot既知のバグ＆修正予定一覧</h5>
+      <p><span class="badge badge-secondary">投稿 2019/04/06</span>
+      <p class="card-text">WARBot既知のバグ＆修正予定一覧</p>
+      <a href="./post/4.html" class="btn btn-primary">続きを読む</a>
+      </div>
+    </div>
+    <div class="card m-3">
+      <div class="card-header">
+      限界大会
+      </div>
+      <div class="card-body">
+      <h5 class="card-title">限界デザイン大会 x クリエイターズ夏休み</h5>
+      <p><span class="badge badge-secondary">投稿 2019/03/20</span>
+      <p class="card-text">限界デザイン大会とクリエイターズ夏休みのコラボイベントを開催します。<br>詳細はリンク先を御覧ください。</p>
+      <a href="./post/3.html" class="btn btn-primary">続きを読む</a>
+      </div>
+    </div>
+    <div class="text-primary more text-center"><i class="fas fa-caret-down"></i> もっと見る</div>
+    <div class="kiji">
+      <div class="card m-3">
+        <div class="card-header">
+        障害情報
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">マイクラサーバーがDoS攻撃に遭いました。</h5>
+        <p><span class="badge badge-secondary">投稿 2019/03/10</span>
+        <p class="card-text">クリエイターズマインクラフトサーバーがDos攻撃に遭いました。<br>対応は詳細を御覧ください。</p>
+        <a href="./post/2.html" class="btn btn-primary">続きを読む</a>
+        </div>
+      </div>
+      <div class="card m-3">
+        <div class="card-header">
+        緊急メンテナンス
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">マイクラサーバーの緊急メンテナンスを行いました。</h5>
+        <p><span class="badge badge-secondary">投稿 2019/03/10</span>
+        <p class="card-text">マイクラサーバーの緊急メンテナンスを、2019/03/09 21:10～21:30まで行いました。<br>・CoreProtect系エラーの改善</p>
+        <a href="https://mc.m86.work/" class="btn btn-primary">サイトに行く</a>
+        </div>
+      </div>
+      <div class="card m-3">
+        <div class="card-header">
+        バグ修正
+        </div>
+        <div class="card-body">
+        <h5 class="card-title">限界大会の公式サイトのバグを修正しました。</h5>
+        <p><span class="badge badge-secondary">投稿 2019/03/08</span>
+        <p class="card-text">限界大会公式サイトのバグを修正しました。<br>・次回大会の日付が正常に表示されない問題<br>・一部端末で時間がずれる問題</p>
+        <a href="https://genkaicreate.m86.work/" class="btn btn-primary">サイトに行く</a>
+        </div>
+      </div>
+      <center>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- devsites -->
+          <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-7860710257272145"
+                data-ad-slot="2222341411"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          </center>
+    </div>
+    <div class="text-primary more text-center"><i class="fas fa-caret-down"></i> もっと見る</div>
+    <div class="kiji">
+        <div class="card m-3">
+            <div class="card-header">
+              新サイトリリース情報
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">マインクラフトサーバーのサイトをリリースしました。</h5>
+              <p><span class="badge badge-secondary">投稿 2019/02/27</span>
+              <p class="card-text">CreatorsMinecraftServerというマイクラサーバーのサイトをリリースしました。一応サイト運営者もサーバーの運営やってます。もしよろしければ遊びに行ってみてください。</p>
+              <a href="https://genkaicreate.m86.work/" class="btn btn-primary">サイトに行く</a>
+            </div>
+          </div>
+          <div class="card m-3">
+            <div class="card-header">
+              WARBotリリース情報
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">WARBot beta4.0をリリースしました。<span class="badge badge-primary">β4.0</span></h5>
+              <p><span class="badge badge-secondary">投稿 2019/02/24</span>
+              <p class="card-text">今回のアップデートは、バグ修正の他に、コマンドの追加等を行いました。</p>
+              <a href="./post/1.html" class="btn btn-primary">続きを読む</a>
+            </div>
+          </div>
+          <div class="card m-3">
+              <div class="card-header">
+                運営からのお知らせ
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">お知らせを統合しました！</h5>
+                <p class="card-text">今まではScrapBoxなどの外部サイトを利用していましたが、今回より自サイトを利用します。</p>
+              </div>
+            </div>
+      </div>
     <center>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- devsites -->
@@ -79,12 +191,6 @@
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
     </center>
-    <div class="clearfix">
-      <div class="float-right mr-3">
-        <a href="./notice2.html">過去のお知らせを見る <i class="fas fa-angle-right"></i></a>
-      </div>
-    </div>
-
   </body>
   <div id="footer-01">
   </div>
