@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:700&display=swap" rel="stylesheet">
     <script type="text/javascript">
       $(function(){
         $("#nav-01").load("https://dev.m86.work/nav/navigation.html");
@@ -25,6 +26,14 @@
     <link rel="mask-icon" href="https://dev.m86.work/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <style>
+        .main {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        p {
+            font-size: 120%;
+        }
+    </style>
 
     <!-- HTML Meta Tags -->
     <title>寄付 - StarLight</title>
@@ -48,62 +57,68 @@
     <meta name="twitter:description" content="運営への寄付を受け付けています。">
     <meta name="twitter:image" content="https://dev.m86.work/favicon/image.png">
 
-  </head>
-  <body>
-    <div id="nav-01">
+    </head>
+    <body>
+        <div id="nav-01">
+        </div>
+        <section class="main">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h2>開発・運営に参加しよう</h2>
+                    <p class="lead">あなたの寄付が、今後開発や運営を継続するための力になります。<br>
+                    私のソフトやサービスが良いなと思ってくれたら、ぜひ寄付をお願いします。</p>
+                </div>
+            </div>
+            <div class="container">
+                <h3 class="mt-5">概要</h3>
+                <hr>
+                <p>寄付に興味をもっていただきありがとうございます。<br>
+                限界大会やソフトウェアは、現在無償で提供しています。<br>
+                そこで、日頃ご利用いただいている皆様に、寄付をお願いしたいです。<br>
+                大きな金額でなくても構いません。活動継続のための資金をお願いします。<br>
+                また、サイト制作等の依頼を頂く形でもOKです。<br>
+                詳しくはHPまで<a href="//minato86.me" target="_brank">minato86.me</a></p>
+                <center>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- devsites -->
+                <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-7860710257272145"
+                        data-ad-slot="2222341411"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                </center>
+                <h3 class="mt-5">寄付金の利用場所</h3>
+                <hr>
+                <h4><a href="//apps.m86.work/warbot">WARBot</a></h4>
+                <p>サーバー費用や開発費用、API利用料金に使わせていただきます。</p>
+                <h4 class="mt-5"><a href="//apps.m86.work/genkai">限界大会</a></h4>
+                <p>運営資金やHP、お題投稿Botの開発費用に使わせていだきます。<br>
+                その他、企画を行う際の特設ページ制作費用にも利用します。</p>
+                <h4 class="mt-5">ソフトウェア開発</h4>
+                <p>より便利なソフトウェアを提供するための開発費用として利用します。</p>
+                <h4 class="mt-5">団体運営</h4>
+                <p>現在運営している団体の運営費用として利用します。<br>
+                グッズを作ったり、企画を行ったりと様々な用途で利用します。</p>
+                <h3 class="mt-5">寄付方法</h3>
+                <hr>
+                <h4>Kyashで支援</h4>
+                <p>Kyashという、電子マネーサービスの送金機能で支援できます。<br>送金機能ですが、匿名で利用でき、好きな名前を入力して送金できます。なお、スマホのみに対応しています。</p>
+                <p>送金するには、送金画面で以下のQRコードを読み取るか、Kyashをインストールした状態で、下の「送金する」ボタンをクリックしてください。</p>
+                <img src="./kyashqr.jpg" width="40%" height="40%">
+                <br>
+                <a href="kyash://qr/u/1361884224549676734" target="_brank" class="btn btn-info mt-4">送金する</a>
+                <h4 class="mt-5">Amazonギフト券で支援</h4>
+                <p>Amazonギフト券のコードを送信することで支援できます。<br>
+                コードの送信は以下のフォームよりお願いします。</p>
+                <a href="https://forms.gle/wu43HEbmesjo91g68" target="_brank" class="btn btn-warning">送金する</a>
+                
+            </div>
+        </section>
+    </body>
+    <div id="footer-01">
     </div>
-    <div class="container">
-        <h3 class="mt-5">寄付ページ</h3>
-        <hr>
-        <h5>支援に興味を持っていただきありがとうございます。</h5>
-        <h5>等サイトは、運営Minato86によって、無償で提供されています。</h5>
-        <h5 class="mt-4">その他私が運営しているサービスに関しても、全て無償で提供しています。</h5>
-        <h5>この運営を、少しでも寄付をしたいと思ったら、ぜひ寄付をお願い致します。</h5>
-        <h5 class="mb-5">サービスの安定した提供という形でお返しさせていただきます。</h5>
-        <center>
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <!-- devsites -->
-            <ins class="adsbygoogle"
-                  style="display:block"
-                  data-ad-client="ca-pub-7860710257272145"
-                  data-ad-slot="2222341411"
-                  data-ad-format="auto"
-                  data-full-width-responsive="true"></ins>
-            <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </center>
-        <h3 class="mt-5">寄付に含まれるサービス</h3>
-        <hr>
-        <img src="./starlight.png" width="80%" height="80%">
-        <h4>StarLight</h4>
-        <p>様々なWebアプリやサービス、稼働情報や更新履歴などが集約するウェブサイト</p>
-        <a href="https://dev.m86.work/" class="btn btn-primary">StarLight</a>
-        <br>
-        <img src="./war.png" width="80%" height="80%">
-        <h4>WARBot</h4>
-        <p>限界大会の運営や、ちょっとしたゲームなどができるBot。<br>進化するうちに画像編集ができるようになりました。</p>
-        <a href="http://apps.m86.work/warbot/" class="btn btn-primary">WARBot</a>
-        <br>
-        <img src="./genkai.png" width="80%" height="80%">
-        <h4>限界大会</h4>
-        <p>クリエイターによるクリエイターのための大会。<br>この大会を通じて依頼が入ることも。</p>
-        <a href="http://apps.m86.work/genkai/" class="btn btn-primary">限界大会</a>
-        <br>
-        <h3 class="mt-5">寄付方法</h3>
-        <hr>
-        <h4>Kyashで支援</h4>
-        <p>Kyashという、電子マネーサービスの送金機能で支援できます。<br>送金機能ですが、匿名で利用でき、好きな名前を入力して送金できます。なお、スマホのみに対応しています。</p>
-        <p>送金するには、送金画面で以下のQRコードを読み取るか、Kyashをインストールした状態で、下の「送金する」ボタンをクリックしてください。</p>
-        <img src="./kyashqr.jpg" width="40%" height="40%">
-        <br>
-        <a href="kyash://qr/u/1361884224549676734" target="_brank" class="btn btn-info mt-4">送金する</a>
-        <br>
-        <h4 class="mt-5">Polcaで支援</h4>
-        <p>Polcaという、クラウドファンディングサービスを利用して支援できます。<br>登録時はスマホが必要ですが、支援はパソコンからできます。</p>
-        <a href="https://polca.jp/projects/kByiUlLAd7g" class="btn btn-warning mt-2" target="_brank">Polcaで支援</a>
-    </div>
-  </body>
-  <div id="footer-01">
-  </div>
 </html>
