@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="mdcss.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+    @media screen and (max-width: 480px) {
+        .mobile {
+            font-size : 30px; 
+        }
+    }
+    .jt-0 {
+        background: #C6FFDD;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .jt-1 {
+        background: #7F7FD5;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    .jt-2 {
+        background-color: #ffe082;
+    }
+    .jt-3 {
+        background-color: #4dd0e1;
+    }
+    .center {
+        text-align: center;
+    }
+    body {
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    h1 {
+        font-weight: 700;
+    }
+    h3 {
+        font-weight: 600;
+    }
+    .large {
+        font-size: 120%;
+    }
+    </style>
+    <link rel="apple-touch-icon" sizes="180x180" href="https://dev.m86.work/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://dev.m86.work/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://dev.m86.work/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://dev.m86.work/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://dev.m86.work/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- HTML Meta Tags -->
+    <title>WARBot - StarLight</title>
+    <meta name="description" content="WARBotの公式サイトです。">
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="WARBot - StarLight">
+    <meta itemprop="description" content="WARBotの公式サイトです。">
+    <meta itemprop="image" content="https://dev.m86.work/favicon/image.png">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://apps.m86.work/genkai/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="WARBot - StarLight">
+    <meta property="og:description" content="WARBotの公式サイトです。">
+    <meta property="og:image" content="https://dev.m86.work/favicon/image.png">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WARBot - StarLight">
+    <meta name="twitter:description" content="WARBotの公式サイトです。">
+    <meta name="twitter:image" content="https://dev.m86.work/favicon/image.png">
+    <script type="text/javascript">
+        $(function(){
+            $("#nav-01").load("https://dev.m86.work/nav/navigation.html");
+            $("#footer-01").load("https://dev.m86.work/footer/copyright.html");
+            $('#myModal').modal('show');
+            $.ajaxSetup({
+                cache: false
+            });
+        });
+        $(window).on('load',function(){
+            $('#service').addClass('active');
+            $('#warbot').addClass('active');
+        });
+        $(document).ready(function(){
+            var target = $("#info");
+
+            $.ajax({
+                type: "GET",
+                url: 'https://gist.githubusercontent.com/Chipsnet/9440b9a10139a4907835b7500d75af00/raw/warbot_info.md',
+                success: function (data) {
+                    target.html(marked(data));
+                }
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <div id="nav-01">
+    </div>
+    <div class="jumbotron jumbotron-fluid jt-0">
+        <div class="container text-white">
+            <h1 class="mobile">WARBot</h1>
+            <p class="lead">最近開発費が枯渇してきました</p>
+        </div>
+    </div>
+    <section id="main">
+        <div class="container">
+            <!--
+            <div class="alert alert-primary" role="alert">
+                <strong>お知らせ:</strong>
+                特別大会「クリエイターズ夏休み x 限界大会」を開催中！詳細は
+                <a href="https://lab.m86.work/2019/07/blog-post_28.html" target="_brank">こちら</a>
+            </div>
+            -->
+            <h1 class="mb-4 mt-5">WARBotとは？</h1>
+            <div class="large">
+                <p>Discordに生息している意味のわからないBot。<br>
+                <a href="//dev.m86.work/genkai/">限界大会</a>の運営業務をしてたりする。</p>
+                <p>2018年に運営を開始して、そこからなんやかんやで現在まで続いている。<br>
+                最近資金が枯渇しているらしい。</p>
+            </div>
+        </div>
+    </section>
+    <section id="point">
+        <div class="jumbotron jt-1 jumbotron-fluid mt-5">
+            <div class="container text-white">
+                <h1 class="mb-3">情報</h1>
+                <div id=info class="markdown-body">読込中...</div>
+            </div>
+        </div>
+    </section>
+    <section id="date">
+        <div class="container">
+            <h1 class="mt-5">機能紹介</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="my-4">単語に反応</h3>
+                    <div class="large">
+                        <p>単語に反応して返信します。<br>
+                        登録してある反応は開発者の気まぐれです。</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="my-4">便利なコマンド</h3>
+                    <div class="large">
+                        <p>コマンドで様々な便利機能が利用できます。<br>
+                        常に更新されているので、機能はもっと増えていきます！</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="my-4">お題投稿システム</h3>
+                    <div class="large">
+                        <p><a href="https://dev.m86.work/genkai/">限界大会</a>のお題を自動投稿します。<br>
+                        限界大会は、このBotによって運営されています。</p>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="join">
+        <div class="jumbotron jt-2 jumbotron-fluid mt-5">
+            <div class="container text-dark">
+                <h1>コマンドリスト</h1>
+                <p class="mt-4">現在作成中...</p>
+            </div>
+        </div>
+    </section>
+    <section id="date">
+        <div class="container">
+            <h1 class="mb-4 mt-5">支援</h1>
+            <div class="large">
+                <p>WARBotは、開発者Minato86によって無償で提供されています。<br>
+                もし、このBotが良いな！と思っていただけたらぜひ支援をお願いします。</p>
+                <p>今後の開発の励みになります！</p>
+            </div>
+            <button type="button" class="btn page-link text-dark d-inline-block mt-2" onclick="window.open().location.href='https://dev.m86.work/donate/'">詳しく見てみる</button>
+        </div>
+    </section>
+    <section id="point">
+        <div class="jumbotron jt-3 jumbotron-fluid mt-5">
+            <div class="container text-white">
+                <h1>更新履歴</h1>
+                <div class="large">
+                    <p>WARBotの更新履歴を見ることができます。<br>
+                    最新のアップデートをチェック！</p>
+                </div>
+                <button type="button" class="btn page-link text-dark d-inline-block mt-2" onclick="window.open().location.href='https://dev.m86.work/genkai/changelog.html'">更新履歴を見る</button>
+            </div>
+        </div>
+    </section>
+    <div id="footer-01" class="mt-5">
+    </div>
+  </body>
+</html>
