@@ -98,6 +98,16 @@
                     target.html(marked(data));
                 }
             });
+
+            var target2 = $("#list");
+
+            $.ajax({
+                type: "GET",
+                url: 'https://gist.githubusercontent.com/Chipsnet/7d3ae56b5f6dc631c241d0365f527036/raw/warbot_commands.md',
+                success: function (data) {
+                    target2.html(marked(data));
+                }
+            });
         });
     </script>
   </head>
@@ -132,7 +142,7 @@
         <div class="jumbotron jt-1 jumbotron-fluid mt-5">
             <div class="container text-white">
                 <h1 class="mb-3">情報</h1>
-                <div id=info class="markdown-body">読込中...</div>
+                <div id="info" class="markdown-body">読込中...</div>
             </div>
         </div>
     </section>
@@ -167,8 +177,8 @@
     <section id="join">
         <div class="jumbotron jt-2 jumbotron-fluid mt-5">
             <div class="container text-dark">
-                <h1>コマンドリスト</h1>
-                <p class="mt-4">現在作成中...</p>
+                <h1 class="mb-3">コマンドリスト</h1>
+                <div id="list" class="markdown-body">読込中...</div>
             </div>
         </div>
     </section>
